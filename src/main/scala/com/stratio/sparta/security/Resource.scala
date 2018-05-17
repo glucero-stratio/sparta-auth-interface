@@ -37,10 +37,6 @@ case object ConfigurationResource extends ResourceType{
   override def name(): String = "configuration"
 }
 
-case object ContextResource extends ResourceType{
-  override def name(): String = "context"
-}
-
 case object DriverResource extends ResourceType{
   override def name(): String = "driver"
 }
@@ -49,8 +45,20 @@ case object EnvironmentResource extends ResourceType{
   override def name(): String = "environment"
 }
 
+case object ExecutionResource extends ResourceType{
+  override def name(): String = "execution"
+}
+
+case object GroupResource extends ResourceType{
+  override def name(): String = "group"
+}
+
 case object PluginResource extends ResourceType{
   override def name(): String = "plugin"
+}
+
+case object StatusResource extends ResourceType{
+  override def name(): String = "status"
 }
 
 case object TemplateResource extends ResourceType{
